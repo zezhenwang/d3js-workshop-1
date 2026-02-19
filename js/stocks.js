@@ -20,6 +20,8 @@ let stocks = await Promise.all([
     d3.csv("data/GOOG.csv").then(data => ({ name: "GOOG", values: data })),
     // TODO: Load AMZN.csv with name "AMZN"
     d3.csv("data/AMZN.csv").then(data => ({ name: "AMZN", values: data })),
+    d3.csv("data/IBM.csv").then(data => ({ name: "IBM", values: data })),
+    d3.csv("data/MSFT.csv").then(data => ({ name: "MSFT", values: data }))  
 ]);
 
 console.log("Loaded stocks:", stocks);
